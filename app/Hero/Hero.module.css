@@ -1,0 +1,120 @@
+.heroContainer {
+    margin: 5rem 6.5rem 0 6.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    border-radius: 4rem;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
+  
+  .h1 {
+    color: var(--background-color);
+    font-size: 6.4rem;
+    font-style: normal;
+    line-height: 122.5%;
+    letter-spacing: -0.1408rem;
+    z-index: 1;
+    font-weight: 700;
+  }
+  
+  .p {
+    color: var(--background-color);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3.6rem */
+    letter-spacing: -0.0528rem;
+  }
+  
+  .heroText{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 25%;
+      right: 10%;
+  }
+  
+  .leftShape{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0;
+  }
+  
+  .bottomPart {
+      display: flex;
+      align-items: flex-end;
+  }
+  
+  .leftSquare {
+      background-color:var(--background-color);
+      height: 8rem;
+      width: 62rem;
+      border-radius: 0 4rem 0 4rem;
+      bottom: 0;
+      display: flex;
+      align-items: flex-end;
+  }
+  
+  .aboutButton{
+    color: var(--text-color);
+    font-size: 2rem;
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    margin-left: 7rem;
+  }
+
+  .aboutButton li{
+    padding: 0.7rem 2.4rem;
+    background-color: var(--inactive-color);
+    border-radius: 5rem;
+  }
+
+  .aboutButton li:hover,
+  .aboutButton .active{
+    background-color: var(--selected-color);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .cornerImage{
+      border: 0;
+      bottom: 0;
+      transform: rotate(180deg);
+      height: 4rem;
+      width: 4rem;
+  }
+  
+  .rightShape{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .rightSquare{
+    display: flex;
+      background-color:var(--background-color);
+      height: 8rem;
+      width: 40rem;
+      border-radius: 4rem 0 4rem 0;
+      color: var(--text-color);
+      font-size: 2rem;
+      align-items: center;
+      padding-left: 3rem;
+  }
+  
+  .rightCornerImage{
+      /* background-color: var(--background-color); */
+      transform: rotate(90deg);
+      height: 4rem;
+      width: 4rem;
+  }
+  

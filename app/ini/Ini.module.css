@@ -1,0 +1,13 @@
+.initiativeContainer {
+    margin: 10rem 13.5rem 0 13.5rem
+
+}
+
+.initiativeContainer h2{
+    font-size: 4.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 9.6rem */
+letter-spacing: -0.1408rem;
+color: var(--text-color);
+}
