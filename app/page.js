@@ -7,7 +7,6 @@ import corner from "../public/corner.png";
 import { motion } from "framer-motion";
 
 export default function Home() {
-
   const fadeIn = {
     hidden: { opacity: 1, y: 80 }, // Start with opacity 0 and slight Y translation
     visible: { opacity: 1, y: 0, transition: { duration: 1 } }, // Fade in and move up smoothly
@@ -27,12 +26,15 @@ export default function Home() {
           <h1 className={styles.h1}>Bridges Health Worldwide</h1>
           <p className={styles.p}>Empowering UT for Global Health Equity</p>
         </div>
-        <motion.div className={styles.leftShape}
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeIn}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ ease: "easeOut", duration: 1 }}>
+
+        <motion.div
+          className={styles.leftShape}
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
           <Image
             src={corner}
             className={styles.cornerImage}
@@ -49,6 +51,27 @@ export default function Home() {
               alt="corner image"
               priority
             />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className={styles.rightShape}
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+          <Image src={corner} className={styles.rightCornerImage} />
+          <div className={styles.bottomPart}>
+            <Image
+              src={corner}
+              className={styles.rightCornerImage}
+              sizes="100vw"
+              alt="corner image"
+              priority
+            />
+            <div className={styles.rightSquare}></div>
           </div>
         </motion.div>
       </div>

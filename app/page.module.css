@@ -65,3 +65,26 @@
     height: 4rem;
     width: 4rem;
 }
+
+.rightShape{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 0;
+    right: 0;
+}
+
+.rightSquare{
+    background-color:var(--background-color);
+    height: 8rem;
+    width: 40rem;
+    border-radius: 4rem 0 4rem 0;
+}
+
+.rightCornerImage{
+    /* background-color: var(--background-color); */
+    transform: rotate(90deg);
+    height: 4rem;
+    width: 4rem;
+}
