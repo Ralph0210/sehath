@@ -1,6 +1,5 @@
 .initiativeContainer {
-    margin: 10rem 13.5rem 0 13.5rem
-
+    margin: 10rem 6.5rem 0 13.5rem
 }
 
 .initiativesTitle{
@@ -99,4 +98,25 @@ font-style: normal;
 font-weight: 700;
 line-height: 150%; /* 3.6rem */
 letter-spacing: -0.0528rem;
+}
+
+@media (max-width: 921px) {
+    .initiativeContainer h2{
+        font-size: 4.8rem;
+    }
+
+    .initiativeContainer p{
+        font-size: 2rem;
+    }
+
+    .leftContainer{
+        height: 70rem;
+    }
+
+    .rightContainer{
+        height: 70rem;
+    }
+    .initiativeContainer {
+        margin: 10rem 3rem 0 3rem
+    }
 }

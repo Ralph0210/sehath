@@ -4,12 +4,20 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import hero from "../../public/new2.png";
 import corner from "../../public/corner.png";
-import { motion } from "framer-motion";
-import { useState } from 'react';
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from 'react';
 
 export default function Hero({...props}) {
 
-  const {active, setActive} = props
+  const {active, setActive, setIsInView}  = props
+  const ref = useRef(null)
+  const inView  = useInView(ref);
+
+  useEffect(() => {
+    console.log(inView)
+  },[inView])
+
+  setIsInView(!inView);
 
   const fadeIn = {
     hidden: { opacity: 1, y: 80 }, // Start with opacity 0 and slight Y translation
@@ -47,7 +55,7 @@ export default function Hero({...props}) {
             priority
           />
           <div className={styles.bottomPart}>
-            <div className={styles.leftSquare}><ul className={styles.aboutButton}>
+            <div className={styles.leftSquare}><ul className={styles.aboutButton} ref={ref}>
                 <motion.li whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }} className={`${active === 'mission' ? styles.active : ''} `} onClick={() => setActive('mission')}>Mission</motion.li>
                 <motion.li whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }} className={active === 'approach' ? styles.active : ''} onClick={() => setActive('approach')}>Approach</motion.li>
                 <motion.li whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }} className={active === 'vision' ? styles.active : ''} onClick={() => setActive('vision')}>Vision</motion.li>

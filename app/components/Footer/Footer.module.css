@@ -121,3 +121,21 @@ letter-spacing: -0.0352rem;
 bottom: 2%;
 right: 4%;
 }
+
+@media (max-width: 921px){
+    .gmText p{
+        font-size: 2rem;
+    }
+
+    .gmText p:nth-child(1){
+        font-size: 2.4rem;
+    }
+
+    .square{
+        width: 40rem;
+    }
+
+    .gmText{
+        padding-left: 4rem;
+    }
+}

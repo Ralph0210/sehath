@@ -1,15 +1,15 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
 import study from "../../public/study.png";
 import corner from "../../public/corner.png";
 import sideMission from "../../public/missionSide.png";
 import arrow from "../../public/arrow.svg";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useInView, AnimatePresence } from "framer-motion";
 
 function About({ ...props }) {
-  const { active } = props;
+  const { active, setActive, isInView } = props;
   const [textToDisplay, setTextToDisplay] = useState([]);
   const controls = useAnimation();
 
@@ -73,8 +73,53 @@ function About({ ...props }) {
             {textToDisplay[1]}
           </motion.p>
         </div>
-
-        <Image src={study} width={730} />
+        <div className={styles.buttonImage}>
+          <AnimatePresence>
+          {isInView && (<ul className={styles.aboutButton}>
+            <motion.li
+              whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.1 }}
+              className={`${active === "mission" ? styles.active : ""} `}
+              initial={{ opacity: 0, y: -80 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -80 }}
+              transition={{ type: "spring" }}
+              onClick={() => setActive("mission")}
+            >
+              Mission
+            </motion.li>
+            <motion.li
+              whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.1 }}
+              className={active === "approach" ? styles.active : ""}
+              initial={{ opacity: 0, y: -80 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -80 }}
+              transition={{ type: "spring", delay: 0.3}}
+              onClick={() => setActive("approach")}
+            >
+              Approach
+            </motion.li>
+            <motion.li
+              whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.1 }}
+              className={active === "vision" ? styles.active : ""}
+              initial={{ opacity: 0, y: -80 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -80 }}
+              transition={{ type: "spring", delay: 0.5}}
+              onClick={() => setActive("vision")}
+            >
+              Vision
+            </motion.li>
+          </ul>)}</AnimatePresence>
+          <Image src={study} sizes="100vw"
+        // Make the image display full width
+        style={{
+          width: '90%',
+          height: 'auto',
+        }} />
+        </div>
 
         <div className={styles.join}>
           <motion.p initial={{ opacity: 0, x: -20 }} animate={controls}>
@@ -100,7 +145,10 @@ function About({ ...props }) {
               />
               <div className={styles.rightSquare}>
                 <div className={styles.joinUs} style={{ cursor: "pointer" }}>
-                  <motion.span whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }}>
+                  <motion.span
+                    whileTap={{ scale: 0.8 }}
+                    whileHover={{ scale: 1.1 }}
+                  >
                     Join Us
                   </motion.span>
                   <span>or follow us on instagram</span>

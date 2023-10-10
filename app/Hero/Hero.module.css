@@ -1,7 +1,6 @@
 .heroContainer {
     margin: 5rem 6.5rem 0 6.5rem;
     position: relative;
-    /* overflow: hidden; */
   }
   
   .heroImage {
@@ -43,6 +42,7 @@
       flex-direction: column;
       position: absolute;
       bottom: 0;
+      width: 50%;
   }
   
   .bottomPart {
@@ -53,11 +53,12 @@
   .leftSquare {
       background-color:var(--background-color);
       height: 8rem;
-      width: 62rem;
+      width: 100%;
       border-radius: 0 4rem 0 4rem;
       bottom: 0;
       display: flex;
       align-items: flex-end;
+      z-index: 5;
   }
   
   .aboutButton{
@@ -66,7 +67,10 @@
     display: flex;
     gap: 3rem;
     list-style-type: none;
-    margin-left: 7rem;
+    margin-left: 15%;
+    position: sticky;
+  top: 0; /* Stick to the top of the screen */
+  z-index: 999; 
   }
 
   .aboutButton li{
@@ -97,18 +101,22 @@
       align-items: flex-end;
       bottom: 0;
       right: 0;
+      width: 40%;
   }
   
   .rightSquare{
     display: flex;
       background-color:var(--background-color);
       height: 8rem;
-      width: 40rem;
+      width: 100%;
       border-radius: 4rem 0 4rem 0;
       color: var(--text-color);
       font-size: 2rem;
       align-items: center;
       padding-left: 3rem;
+      z-index: 4;
+      /* justify-content: flex-end; */
+      /* align-items: flex-end; */
   }
   
   .rightCornerImage{
@@ -118,3 +126,43 @@
       width: 4rem;
   }
   
+
+  @media (max-width: 1201px) {
+    .rightSquare{
+      font-size: 1.6rem;
+    }
+    .aboutButton{
+      margin-left: 5%;
+      gap: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 921px) {
+    .h1{
+      font-size: 4.8rem;
+    }
+
+    .p{
+      font-size: 2rem;
+    }
+
+    .leftSquare{
+      height: 4rem;
+      border-radius: 0 2rem 0 2rem;
+    }
+
+    .leftShape{
+      width: 60%;
+    }
+
+    .cornerImage{
+      width: 2rem;
+      height: 2rem;
+    }
+
+  }
+
+  @media (max-width: 768px){
+    
+  }

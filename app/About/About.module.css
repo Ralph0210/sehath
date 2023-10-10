@@ -108,7 +108,7 @@
 .joinUs {
   margin-top: 1rem;
   display: flex;
-  gap: 6rem;
+  gap: 3rem;
 }
 
 .joinUs span:nth-child(1) {
@@ -130,4 +130,111 @@
   align-items: center;
 }
 
+.buttonImage{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
+.aboutButton{
+  position: absolute;
+  left: -20%;
+  color: var(--text-color);
+  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+  transform: rotate(-90deg);
+}
+
+.aboutButton li{
+  padding: 0.7rem 2.4rem;
+  background-color: var(--inactive-color);
+  border-radius: 5rem;
+}
+
+.aboutButton li:hover,
+.aboutButton .active{
+  background-color: var(--selected-color);
+  /* transition: all 0.5s ease-in-out; */
+  cursor: pointer;
+}
+
+@media (max-width: 921px){
+  .leftContainer{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rightContainer{
+    display: none;
+  }
+  .aboutButton{
+    font-size: 1.6rem;
+    left: -28%;
+  }
+
+  .about{
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .about h2{
+    font-size: 3.6rem;
+  height: fit-content;
+  }
+
+  .about p{
+    flex: 1;
+    width:min-content;
+    /* height: fit-content; */
+    font-size: 1.6rem;
+  }
+
+  .buttonImage{
+    /* width: 80%; */
+    justify-content: center;
+  }
+
+  .join p{
+    font-size: 1.6rem;
+  }
+
+  .joinUs {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .rightSquare {
+    display: flex;
+    background-color: var(--background-color);
+    height: 5rem;
+    width: 45rem;
+    border-radius: 2rem 0 2rem 0;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    align-items: center;
+    padding-left: 3rem;
+  }
+
+  .join p {
+    width: 85vw;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3.6rem */
+    letter-spacing: -0.0528rem;
+    padding: 2rem 3rem 6rem 3rem;
+    background-color: var(--inactive-color);
+    border-radius: 5rem;
+    text-decoration-line: underline;
+  }
+
+}
