@@ -19,13 +19,14 @@ margin-bottom: 1rem;
 }
 
 .leftContainer{
-    /* position: relative; */
-    width: 30rem;
+    position: relative;
+    width: 30%;
     height: 95rem;
     overflow: hidden;
     border-radius: 5rem;
     cursor: pointer;
     transition: all 0.8s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .leftContainer img{
@@ -40,7 +41,8 @@ margin-bottom: 1rem;
 }
 
 .rightContainer{
-    width: 30rem;
+    position: relative;
+    width: 30%;
     height: 95rem;
     overflow: hidden;
     border-radius: 5rem;
@@ -49,7 +51,7 @@ margin-bottom: 1rem;
 }
 
 .active{
-    width: 95rem;
+    width: 66%;
     transition: all 0.8s ease-in-out;
 }
 
@@ -62,18 +64,26 @@ margin-bottom: 1rem;
     transition: all 0.5s ease-in-out;
 }
 
-.overlay{
+.leftOverlay,
+.rightOverlay{
     position: absolute;
     z-index: 5;
     display: flex;
     flex-direction: column;
-    bottom: 0;
-    margin-left: 6.4rem;
-    margin-bottom: 6.8rem;
+    bottom: 4%;
+    margin-left: 5%;
+    /* flex-wrap: wrap; */
+    width: 14%;
 }
 
-.overlay h2{
-color: #FFF;
+.activeLeft,
+.activeRight{
+    width: 90%;
+}
+
+.leftOverlay h2,
+.rightOverlay h2{
+color: var(--background-color);
 font-size: 6.4rem;
 font-style: normal;
 font-weight: 700;
@@ -81,9 +91,9 @@ line-height: 150%; /* 9.6rem */
 letter-spacing: -0.1408rem;
 }
 
-.overlay p{
-    width: 64rem;
-    color: #FFF;
+.leftOverlay p,
+.rightOverlay p{
+    color: var(--background-color);
 font-size: 2.4rem;
 font-style: normal;
 font-weight: 700;

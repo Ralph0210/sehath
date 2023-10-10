@@ -48,9 +48,9 @@ export default function Hero({...props}) {
           />
           <div className={styles.bottomPart}>
             <div className={styles.leftSquare}><ul className={styles.aboutButton}>
-                <li className={`${active === 'mission' ? styles.active : ''} `} onClick={() => setActive('mission')}>Mission</li>
-                <li className={active === 'approach' ? styles.active : ''} onClick={() => setActive('approach')}>Approach</li>
-                <li className={active === 'vision' ? styles.active : ''} onClick={() => setActive('vision')}>Vision</li>
+                <motion.li whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }} className={`${active === 'mission' ? styles.active : ''} `} onClick={() => setActive('mission')}>Mission</motion.li>
+                <motion.li whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }} className={active === 'approach' ? styles.active : ''} onClick={() => setActive('approach')}>Approach</motion.li>
+                <motion.li whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }} className={active === 'vision' ? styles.active : ''} onClick={() => setActive('vision')}>Vision</motion.li>
               </ul>
             </div>
             <Image

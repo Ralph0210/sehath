@@ -99,7 +99,9 @@ function About({ ...props }) {
               />
               <div className={styles.rightSquare}>
                 <div className={styles.joinUs} style={{ cursor: "pointer" }}>
-                  <span>Join Us</span>
+                  <motion.span whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }}>
+                    Join Us
+                  </motion.span>
                   <span>or follow us on instagram</span>
                 </div>
               </div>
