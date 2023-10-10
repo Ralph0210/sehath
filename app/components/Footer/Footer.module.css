@@ -1,0 +1,123 @@
+.footerContainer{
+    display: flex;
+    position: relative;
+    background-color: #FFEAD7;
+    border-radius: 5rem 5rem 0 0;
+}
+
+.footerLinks{
+    display: flex;
+    padding: 6rem 6rem 10rem 6rem;
+    gap: 8rem;
+}
+
+.footerLinks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style-type: none;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 2.4rem */
+letter-spacing: -0.0352rem;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 2.4rem */
+letter-spacing: -0.0352rem;
+}
+
+.gm{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* background-color: black; */
+    right: 0;
+    align-items: flex-end;
+}
+
+.top{
+    display: flex;
+}
+
+.corner{
+    width: 4rem;
+    height: 4rem;
+}
+
+.square{
+    width: 60rem;
+    height: 20rem;
+    background-color: var(--background-color);
+    z-index: 5;
+    border-radius: 0 0 0 5rem;
+}
+
+.gmText{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+.timeLocationContainer{
+    display: flex;
+    gap: 3rem;
+}
+
+.timeLocation{
+    display: flex;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 3.6rem */
+letter-spacing: -0.0528rem;
+align-items: center;
+gap: 1.6rem;
+}
+
+.gmText p:nth-child(1){
+    font-size: 3.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 4.8rem */
+letter-spacing: -0.0704rem;
+color: var(--text-color);
+}
+
+.line{
+    margin-left: 4%;
+    width: 92%;
+    height: 0.2rem;
+    background-color: rgba(84, 42, 0, 0.50);
+    z-index: 6;
+    position: absolute;
+    bottom: 23%;
+}
+
+.logo{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+}
+
+.copyright{
+    position: absolute;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 2.4rem */
+letter-spacing: -0.0352rem;
+bottom: 2%;
+right: 4%;
+}

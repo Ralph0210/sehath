@@ -126,7 +126,7 @@ function Join() {
             </div>
           </div>
           <motion.a
-            className={styles.signUp}
+            className={`${styles.signUp} ${styles.pulse}`}
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.1 }}
             target="-blank"
