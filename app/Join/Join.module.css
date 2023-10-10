@@ -38,3 +38,63 @@ cursor: pointer;
 .joinWay li.active{
     background-color: var(--selected-color);
 }
+
+.joinForm{
+    display: flex;
+    margin: 4% 14%;
+    justify-content:flex-end;
+}
+
+.leftContainer{
+    flex: 1;
+    color: var(--text-color);
+    font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 3.6rem */
+letter-spacing: -0.0528rem;
+}
+
+.rightContainer{
+    width: 100%;
+    flex: 1;
+    color: var(--text-color);
+    font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 3.6rem */
+letter-spacing: -0.0528rem;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+}
+
+.benefits{
+    flex: 1;
+    width: 70%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.lineContainer{
+    width: 100%;
+    display: flex;
+}
+
+.space{
+    width: 30%;
+}
+
+.line{
+    /* width: 70%; */
+    height: 0.2rem;
+    background-color: var(--text-color);
+}
+
+.lineContainer2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
