@@ -5,6 +5,7 @@ import Image from "next/image";
 import study from "../../public/study.png";
 import corner from "../../public/corner.png";
 import sideMission from "../../public/missionSide.png";
+import arrow from "../../public/arrow.svg";
 import { motion, useAnimation } from "framer-motion";
 
 function About({ ...props }) {

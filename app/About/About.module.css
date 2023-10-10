@@ -112,13 +112,15 @@
 }
 
 .joinUs span:nth-child(1) {
+  display: flex;
   background-color: var(--selected-color);
-  padding: 0.8rem 3rem;
+  padding: 0 3rem;
   border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .joinUs span:nth-child(2) {
-  /* background-color: var(--selected-color); */
   padding: 0.8rem 0;
   border-radius: 2rem;
 }
@@ -127,3 +129,5 @@
   display: flex;
   align-items: center;
 }
+
+
