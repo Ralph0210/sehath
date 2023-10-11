@@ -17,18 +17,16 @@ function Navbar() {
 
   return (
     <>
+    <div className={styles.logoContainer}>
       <Image
         src={logo}
         alt="logo"
-        width={100}
+        sizes="100vw"
         style={{
-          objectFit: "contain",
-          position: "absolute",
-          left: "12rem",
-          top: "7rem",
-          zIndex: "4",
+          width: '100%',
+          height: 'auto',
         }}
-      />
+      /></div>
       <div className={styles.nav}>
         <nav>
           <ul className={styles.ul}>

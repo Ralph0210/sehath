@@ -193,7 +193,6 @@
   .about p{
     flex: 1;
     width:min-content;
-    /* height: fit-content; */
     font-size: 1.6rem;
   }
 
@@ -237,4 +236,28 @@
     text-decoration-line: underline;
   }
 
+}
+
+@media (max-width: 768px){
+  .aboutContainer{
+    height: 100vh;
+  }
+
+  .about h2{
+    flex: 1;
+    width: min-content;
+  }
+
+  .about p{
+    flex: 1;
+  }
+
+  .join p {
+    padding: 2.6rem 2.9rem;
+  }
+
+  .aboutButton{
+    font-size: 1.6rem;
+    left: -35%;
+  }
 }

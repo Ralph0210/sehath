@@ -30,14 +30,37 @@ export default function Hero({...props}) {
         <Image
           src={hero}
           className={styles.heroImage}
-          sizes="100vw"
+          sizes="100vh"
           alt="hero image"
           priority
+          style={{height: '100%', objectFit:'contain'}}
         />
+        <div className={styles.content}>
         <div className={styles.heroText}>
           <h1 className={styles.h1}>Bridges Health Worldwide</h1>
           <p className={styles.p}>Empowering UT for Global Health Equity</p>
         </div>
+
+        <motion.div
+          className={styles.rightShape}
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+          <Image src={corner} className={styles.rightCornerImage} />
+          <div className={styles.bottomPart}>
+            <Image
+              src={corner}
+              className={styles.rightCornerImage}
+              sizes="100vw"
+              alt="corner image"
+              priority
+            />
+            <div className={styles.rightSquare}><div>We are a student-led organization dedicated to improve global healthcare.</div></div>
+          </div>
+        </motion.div>
 
         <motion.div
           className={styles.leftShape}
@@ -70,27 +93,7 @@ export default function Hero({...props}) {
             />
           </div>
         </motion.div>
-
-        <motion.div
-          className={styles.rightShape}
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ ease: "easeOut", duration: 1 }}
-        >
-          <Image src={corner} className={styles.rightCornerImage} />
-          <div className={styles.bottomPart}>
-            <Image
-              src={corner}
-              className={styles.rightCornerImage}
-              sizes="100vw"
-              alt="corner image"
-              priority
-            />
-            <div className={styles.rightSquare}>We are a student-led organization dedicated to improve global healthcare.</div>
-          </div>
-        </motion.div>
+        </div>
       </div>
     </>
   );
