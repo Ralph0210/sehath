@@ -180,7 +180,12 @@
   @media (max-width: 768px){
     .heroContainer{
       margin: 0;
-      height: 100vh;
+      height: auto;
+    }
+
+    .heroImage {
+      transform: scale(1);
+      border-radius: 0;
     }
 
     .content{
@@ -190,23 +195,19 @@
       align-items: center;
     }
 
-    .heroImage {
-      top: 0;
-      margin-top: 0;
-      border-radius: 0;
-      transform: scale(2);
-      overflow-y: visible;
-      background-size: cover;
+    .heroImageContainer{
+      height: 100vh;
     }
 
     .rightShape{
+      display: none;
       position: relative;
       bottom: 0;
     }
 
     .leftShape{
       position: relative;
-      margin-top: 5%;
+      margin-top: 0;
       display: none;
     }
 
@@ -245,6 +246,14 @@
       text-align: center;
     }
 
+    .mobileText{
+      display: block;
+      font-size: 1.6rem;
+      color: var(--text-color);
+      text-align: center;
+      margin: 5% 10%;
+    }
+
   }
 
   @media (max-width: 480px) {
@@ -257,6 +266,7 @@
     }
     .heroImage {
       transform: scale(1);
+      border-radius: 0;
     }
 
     .rightShape {

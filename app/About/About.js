@@ -24,7 +24,7 @@ function About({ ...props }) {
   };
 
   useEffect(() => {
-    controls.start({ opacity: 0, x: -20 }); // Animate text out
+    controls.start({ opacity: 0, x: 20 }); // Animate text out
     setTimeout(() => {
       switch (active) {
         case "mission":
@@ -57,6 +57,36 @@ function About({ ...props }) {
 
   return (
     <>
+    <div className={styles.tabletabout}>
+        <ul className={styles.aboutButtonTablet}>
+      <div className={`${active === "mission" ? styles.active : ""} `}>
+            <li
+              onClick={() => setActive("mission")}
+            >
+              Mission
+            </li>
+            <div></div>
+            </div>
+
+            <div className={active === "approach" ? styles.active : ""}>
+            <li
+              onClick={() => setActive("approach")}
+            >
+              Approach
+            </li>
+            <div></div>
+            </div>
+
+            <div  className={active === "vision" ? styles.active : ""}>
+            <li
+              onClick={() => setActive("vision")}
+            >
+              Vision
+            </li>
+            <div></div>
+            </div>
+          </ul></div>
+
     <div className={styles.aboutContainer}>
       <div className={styles.leftContainer}>
         <div className={styles.about}>
@@ -165,25 +195,65 @@ function About({ ...props }) {
     </div>
     <div className={styles.mobileAboutContainer}>
     <ul className={styles.aboutButton}>
+      <div className={`${active === "mission" ? styles.active : ""} `}>
             <li
-              className={`${active === "mission" ? styles.active : ""} `}
               onClick={() => setActive("mission")}
             >
               Mission
             </li>
+            <div></div>
+            </div>
+
+            <div className={active === "approach" ? styles.active : ""}>
             <li
-              className={active === "approach" ? styles.active : ""}
               onClick={() => setActive("approach")}
             >
               Approach
             </li>
+            <div></div>
+            </div>
+
+            <div  className={active === "vision" ? styles.active : ""}>
             <li
-              className={active === "vision" ? styles.active : ""}
               onClick={() => setActive("vision")}
             >
               Vision
             </li>
+            <div></div>
+            </div>
           </ul>
+          <div className={styles.about}>
+          <motion.h2 initial={{ opacity: 0, x: -20 }} animate={controls}>
+            {textToDisplay[0]}
+          </motion.h2>
+
+          <div className={styles.imageDiv}>
+          <Image src={study} sizes="100vh"
+        // Make the image display full width
+        style={{
+          height: '100%',
+        }} />
+        </div>
+
+          <motion.p initial={{ opacity: 0, x: -20 }} animate={controls}>
+            {textToDisplay[1]}
+          </motion.p>
+          <div className={styles.mobileTextDivider}></div>
+          <div className={styles.join}>
+          <motion.p initial={{ opacity: 0, x: -20 }} animate={controls}>
+            {textToDisplay[2]}
+          </motion.p>
+          <div className={styles.joinUs} style={{ cursor: "pointer" }}>
+                  <motion.span
+                    whileTap={{ scale: 0.8 }}
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    Join Us
+                  </motion.span>
+                  <span>or follow us on instagram</span>
+                </div>
+        </div>
+        </div>
     </div>
     </>
   );

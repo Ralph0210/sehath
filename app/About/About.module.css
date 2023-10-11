@@ -8,6 +8,10 @@
   display: none;
 }
 
+.aboutButtonTablet{
+  display: none;
+}
+
 .leftContainer {
   position: relative;
   display: flex;
@@ -244,7 +248,7 @@
 
 @media (max-width: 768px){
   .aboutContainer{
-    height: 100vh;
+    height: auto;
   }
 
   .about h2{
@@ -260,13 +264,76 @@
     padding: 2.6rem 2.9rem;
   }
 
-  .aboutButton{
-    font-size: 1.6rem;
-    left: -35%;
+  .aboutButtonTablet{
+    display: flex;
   }
+
+  .aboutButton{
+    display: none;
+  }
+
+  .leftContainer{
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .aboutButtonTablet{
+    list-style-type: none;
+    all: unset;
+    font-size: 2.4rem;
+    color: var(--text-color);
+    display: flex;
+    list-style-type: none;
+    gap: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    transition:all 0.8s ease-in-out;
+    margin-bottom: 3rem;
+  }
+
+  .aboutButtonTablet li{
+    all: unset;
+    transition:all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .aboutButtonTablet div div{
+    width: 0;
+    transition:all 0.8s ease-in-out;
+  }
+
+.aboutButtonTablet li:hover,
+.aboutButtonTablet .active{
+  all: unset;
+  cursor: pointer;
+  transform: scale(2);
+  transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: transparent;
+}
+
+.aboutButtonTablet .active div{
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--selected-color);
+  transition: width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tabletabout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightShape{
+  position: relative;
+}
 }
 
 @media (max-width: 480px) {
+
+  .aboutButtonTablet{
+    display: none;
+  }
   .aboutContainer{
     display: none;
   }
@@ -288,6 +355,7 @@
     margin-right: auto;
     margin-top: 10%;
     transition:all 0.8s ease-in-out;
+    margin-bottom: 3rem;
   }
 
   .aboutButton li{
@@ -295,17 +363,55 @@
     transition:all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  .aboutButton li::after{
-    width: 20rem;
-    height: 0.2rem;
-    background-color: var(--selected-color);
+  .aboutButton div div{
+    width: 0;
+    transition:all 0.8s ease-in-out;
   }
 
-  .aboutButton li:hover,
+.aboutButton li:hover,
 .aboutButton .active{
   all: unset;
   cursor: pointer;
   transform: scale(2);
-  transition:all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: transparent;
 }
+
+.aboutButton .active div{
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--selected-color);
+  transition: width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.about{
+  flex-direction: column;
+}
+
+.about h2{
+  all: unset;
+  font-size: 3.6rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.about p{
+  width: 80vw;
+}
+
+.mobileTextDivider{
+  display: block;
+  width: 80%;
+  height: 0.2rem;
+  background-color: rgba(84, 42, 0, 0.50);
+  margin: 0 auto;
+}
+
+.joinUs{
+  margin-top: 2rem;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+
 }

@@ -5,6 +5,10 @@
     border-radius: 5rem 5rem 0 0;
 }
 
+.mobileGm{
+    display: none;
+}
+
 .footerLinks{
     display: flex;
     padding: 6rem 6rem 10rem 6rem;
@@ -137,5 +141,39 @@ right: 4%;
 
     .gmText{
         padding-left: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gmText p:nth-child(1){
+        font-size: 2rem;
+    }
+
+    .copyright{
+        font-size: 1.4rem;
+    }
+
+    .logo{
+        left: 37%;
+    }
+
+    .square{
+        width: 35rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gm{
+        display: none;
+    }
+
+    .logo{
+        left: 30%;
+    }
+
+    .mobileGm{
+        display: block;
+        margin-bottom: 5rem;
     }
 }
