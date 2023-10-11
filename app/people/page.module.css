@@ -1,1 +1,108 @@
+.main {
+  width: 100%;
+  height: auto;
+}
 
+.titleImage{
+    position: relative;
+    width: 100%;
+}
+
+.title {
+  position: absolute;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--background-color);
+  font-size: 9.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 19.2rem */
+  letter-spacing: -0.2816rem;
+  z-index: 100;
+}
+
+.meetCrewContainer{
+    display: flex;
+    margin: 12.8rem 7%;
+    flex-wrap: wrap;
+}
+
+.leftContainer,
+.rightContainer{
+    flex: 1;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 10rem;
+}
+
+.text h2{
+    color: var(--text-color);
+    font-size: 3.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 5.4rem */
+letter-spacing: -0.0792rem;
+}
+
+.text p{
+    width: 85%;
+    color: rgba(84, 42, 0, 0.50);;
+    font-size: 2.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 3.6rem */
+letter-spacing: -0.0528rem;
+}
+
+.rightContainer{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.officerCard h3{
+    color: var(--text-color);
+    font-size: 3.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 4.8rem */
+letter-spacing: -0.0704rem;
+}
+
+.officerCard p{
+    max-width: 30rem;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 3rem */
+letter-spacing: -0.044rem;
+width: fit-content;
+}
+
+.crewContainer{
+    display: flex;
+    gap: 3rem;
+    margin: 12.8rem 7%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crewContainer > div{
+    display: flex;
+}
+
+@media (max-width: 921px) {
+  .title {
+    width: fit-content;
+  }
+}

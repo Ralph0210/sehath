@@ -1,5 +1,5 @@
 .nav{
-    position: sticky;
+    position: absolute;
     top: 8rem;
     z-index: 10;
     float: right;

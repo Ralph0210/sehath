@@ -6,8 +6,12 @@ import Image from "next/image";
 import logo from "../../../public/logo.png";
 import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 import Menu from "../Menu/Menu";
+import { usePathname } from "next/navigation";
+
+
 
 function Navbar() {
+const pathname = usePathname();
   const [active, setActive] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
 
@@ -31,9 +35,7 @@ function Navbar() {
         <nav>
           <ul className={styles.ul}>
             <li
-              className={`${styles.li} ${
-                active === "home" ? styles.homeactive : ""
-              }`}
+              className={`${styles.li} ${pathname == "/" ? styles.homeactive : ""}`}
               onClick={() => setActive("home")}
             >
               <Link href="/" className={styles.link}>
@@ -41,9 +43,7 @@ function Navbar() {
               </Link>
             </li>
             <li
-              className={`${styles.li} ${
-                active === "people" ? styles.peopleactive : ""
-              }`}
+              className={`${styles.li} ${pathname == "/people" ? styles.peopleactive : ""}`}
               onClick={() => setActive("people")}
             >
               <Link href="/people" className={styles.link}>
@@ -51,9 +51,7 @@ function Navbar() {
               </Link>
             </li>
             <li
-              className={`${styles.li} ${
-                active === "initiatives" ? styles.iniactive : ""
-              }`}
+              className={`${styles.li} ${pathname == "/initiatives" ? styles.iniactive : ""}`}
               onClick={() => setActive("initiatives")}
             >
               <Link href="/initiatives" className={styles.link}>
@@ -61,9 +59,7 @@ function Navbar() {
               </Link>
             </li>
             <li
-              className={`${styles.li} ${
-                active === "events" ? styles.eventsactive : ""
-              }`}
+              className={`${styles.li} ${pathname == "/events" ? styles.eventsactive : ""}`}
               onClick={() => setActive("events")}
             >
               <Link href="/events" className={styles.link}>
@@ -71,9 +67,7 @@ function Navbar() {
               </Link>
             </li>
             <li
-              className={`${styles.li} ${
-                active === "donation" ? styles.donationactive : ""
-              }`}
+              className={`${styles.li} ${pathname == "/donation" ? styles.donationactive : ""}`}
               onClick={() => setActive("donation")}
             >
               <Link href="/donation" className={styles.link}>
@@ -81,9 +75,7 @@ function Navbar() {
               </Link>
             </li>
             <li
-              className={`${styles.li} ${
-                active === "contact_us" ? styles.conactive : ""
-              }`}
+              className={`${styles.li} ${pathname == "/contact_us" ? styles.conactive : ""}`}
               onClick={() => setActive("contact_us")}
             >
               <Link href="/contact_us" className={styles.link}>
