@@ -126,6 +126,13 @@
       width: 4rem;
   }
   
+  .mobileText{
+    display: none;
+  }
+
+  .mobileTextDivider{
+    display: none;
+  }
 
   @media (max-width: 1201px) {
     .rightSquare{
@@ -241,24 +248,35 @@
   }
 
   @media (max-width: 480px) {
+    .heroContainer{
+      height: auto;
+    }
+
+    .heroImageContainer{
+      height: 100vh;
+    }
     .heroImage {
-      transform: scale(3.1);
+      transform: scale(1);
     }
 
-    .rightSquare{
-      /* width: 80vw; */
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-      height: fit-content;
-      /* width: max-content; */
-      
+    .rightShape {
+      display: none;
     }
 
-    .bottomPart {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+    .mobileText{
+      display: block;
+      font-size: 1.6rem;
+      color: var(--text-color);
+      text-align: center;
+      margin: 5% 10%;
+    }
+
+    .mobileTextDivider{
+        display: block;
+        width: 80%;
+        height: 0.2rem;
+        background-color: rgba(84, 42, 0, 0.50);
+        margin: 0 auto;
+    }
 
   }

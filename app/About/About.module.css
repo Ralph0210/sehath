@@ -4,6 +4,10 @@
   gap: 4rem;
 }
 
+.mobileAboutContainer{
+  display: none;
+}
+
 .leftContainer {
   position: relative;
   display: flex;
@@ -260,4 +264,48 @@
     font-size: 1.6rem;
     left: -35%;
   }
+}
+
+@media (max-width: 480px) {
+  .aboutContainer{
+    display: none;
+  }
+
+  .mobileAboutContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutButton{
+    list-style-type: none;
+    all: unset;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    display: flex;
+    list-style-type: none;
+    gap: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    transition:all 0.8s ease-in-out;
+  }
+
+  .aboutButton li{
+    all: unset;
+    transition:all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .aboutButton li::after{
+    width: 20rem;
+    height: 0.2rem;
+    background-color: var(--selected-color);
+  }
+
+  .aboutButton li:hover,
+.aboutButton .active{
+  all: unset;
+  cursor: pointer;
+  transform: scale(2);
+  transition:all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 }

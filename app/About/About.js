@@ -56,6 +56,7 @@ function About({ ...props }) {
   }, [active]);
 
   return (
+    <>
     <div className={styles.aboutContainer}>
       <div className={styles.leftContainer}>
         <div className={styles.about}>
@@ -162,6 +163,29 @@ function About({ ...props }) {
         <Image src={sideMission} width={600} style={{ objectFit: "contain" }} />
       </div>
     </div>
+    <div className={styles.mobileAboutContainer}>
+    <ul className={styles.aboutButton}>
+            <li
+              className={`${active === "mission" ? styles.active : ""} `}
+              onClick={() => setActive("mission")}
+            >
+              Mission
+            </li>
+            <li
+              className={active === "approach" ? styles.active : ""}
+              onClick={() => setActive("approach")}
+            >
+              Approach
+            </li>
+            <li
+              className={active === "vision" ? styles.active : ""}
+              onClick={() => setActive("vision")}
+            >
+              Vision
+            </li>
+          </ul>
+    </div>
+    </>
   );
 }
 

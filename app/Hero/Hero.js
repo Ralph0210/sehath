@@ -27,14 +27,15 @@ export default function Hero({...props}) {
   return (
     <>
       <div className={styles.heroContainer}>
+        <div className={styles.heroImageContainer}>
         <Image
           src={hero}
           className={styles.heroImage}
           sizes="100vh"
           alt="hero image"
           priority
-          style={{height: '100%', objectFit:'contain'}}
-        />
+          style={{height: '100%', objectFit:'cover'}}
+        /></div>
         <div className={styles.content}>
         <div className={styles.heroText}>
           <h1 className={styles.h1}>Bridges Health Worldwide</h1>
@@ -58,7 +59,7 @@ export default function Hero({...props}) {
               alt="corner image"
               priority
             />
-            <div className={styles.rightSquare}><div>We are a student-led organization dedicated to improve global healthcare.</div></div>
+            <div className={styles.rightSquare}><p>We are a student-led organization dedicated to improve global healthcare.</p></div>
           </div>
         </motion.div>
 
@@ -94,6 +95,8 @@ export default function Hero({...props}) {
           </div>
         </motion.div>
         </div>
+        <p className={styles.mobileText}>We are a student-led organization dedicated to improve global healthcare.</p>
+        <div className={styles.mobileTextDivider}></div>
       </div>
     </>
   );
