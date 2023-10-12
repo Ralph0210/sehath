@@ -1,9 +1,7 @@
-import React from 'react'
-import styles from './Menu.module.css'
-import Link from 'next/link'
-import { scrollToElement } from '../../utils/scroll'
-
-
+import React from "react";
+import styles from "./Menu.module.css";
+import Link from "next/link";
+import { scrollToElement } from "../../utils/scroll";
 
 const Menu = () => {
   return (
@@ -19,19 +17,25 @@ const Menu = () => {
           <li>
             <Link href="/initiatives">Initiatives</Link>
           </li>
-          <li >
+          <li>
             <Link href="/events">Events</Link>
           </li>
-          <li onClick={() => scrollToElement("donation")} style={{ cursor: "pointer" }}>
+          <li
+            // onClick={() => scrollToElement("donation")}
+            style={{ cursor: "pointer" }}
+          >
             <Link href="/#donation">Donation</Link>
           </li>
-          <li  onClick={() => scrollToElement("footer")} style={{ cursor: "pointer" }}>
-            Contact Us
+          <li
+            // onClick={() => scrollToElement("footer")}
+            style={{ cursor: "pointer" }}
+          ><Link href="/#footer">Contact Us</Link>
+            
           </li>
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
