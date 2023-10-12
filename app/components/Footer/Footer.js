@@ -35,9 +35,6 @@ function Footer() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
             <Link href="/people">People</Link>
           </li>
           <li>
@@ -54,9 +51,9 @@ function Footer() {
           </li>
         </ul>
         <ul>
-          <li>Email</li>
-          <li>Instagram</li>
-          <li>Hornslink</li>
+          <li><a target="_blank" href="mailto:sehath.ut@gmail.com" onclick="window.location=another.html">Email</a></li>
+          <li><a target="_blank" href=" https://www.instagram.com/utsehath/">Instagram</a></li>
+          {/* <li>Hornslink</li> */}
         </ul>
       </div>
       <div className={styles.gm}>
