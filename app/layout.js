@@ -1,3 +1,5 @@
+
+
 import "./globals.css";
 import { Inria_Sans } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";

@@ -26,7 +26,7 @@ function Join() {
   };
 
   return (
-    <div className={styles.joinContainer}>
+    <div id='donation' className={styles.joinContainer}>
       <h1 className={styles.joinTitle}>Join Us</h1>
       <div>
         <ul className={styles.joinWay}>
@@ -136,7 +136,8 @@ function Join() {
             <Image src={arrow} alt="arrow" width={30} height={30} />
           </motion.a>
         </div>
-      ) : null}
+      ) : <div className={styles.donation}>
+        <p>Come back soon!</p></div>}
     </div>
   );
 }

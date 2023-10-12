@@ -7,6 +7,7 @@ import corner from "../../public/corner.png";
 import sideMission from "../../public/missionSide.png";
 import arrow from "../../public/arrow.svg";
 import { motion, useAnimation, useInView, AnimatePresence } from "framer-motion";
+import { scrollToElement } from "../utils/scroll";
 
 function About({ ...props }) {
   const { active, setActive, isInView } = props;
@@ -179,6 +180,7 @@ function About({ ...props }) {
                   <motion.span
                     whileTap={{ scale: 0.8 }}
                     whileHover={{ scale: 1.1 }}
+                    onClick={() => scrollToElement("donation")}
                   >
                     Join Us
                   </motion.span>
@@ -247,6 +249,7 @@ function About({ ...props }) {
                   <motion.span
                     whileTap={{ scale: 0.8 }}
                     whileHover={{ scale: 1.1 }}
+                    onClick={() => scrollToElement("donation")}
                   >
                     Join Us
                   </motion.span>

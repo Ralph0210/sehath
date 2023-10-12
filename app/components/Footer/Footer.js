@@ -28,7 +28,7 @@ function Footer() {
               </div>
             </div>
       </div>
-    <div className={styles.footerContainer}>
+    <div id="footer" className={styles.footerContainer}>
       <div className={styles.footerLinks}>
         <ul>
           <li>

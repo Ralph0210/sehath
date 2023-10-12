@@ -130,6 +130,18 @@ justify-content: center;
   animation: pulse-animation 2s infinite;
 }
 
+.donation{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation p{
+    color: var(--text-color);
+    font-size: 2.4rem;
+}
+
 @keyframes pulse-animation {
     0% {
       box-shadow: 0 0 0 0px rgba(253, 182, 106, 0.50);

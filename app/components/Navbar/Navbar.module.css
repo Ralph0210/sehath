@@ -83,6 +83,14 @@ transition: all 0.5s ease-in-out;
     width: 10rem;
 }
 
+.joinLink{
+    color: var(--background-color);
+    text-decoration: none;
+    border: 1px solid var(--background-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+}
+
 
 @media (max-width: 921px){
 
