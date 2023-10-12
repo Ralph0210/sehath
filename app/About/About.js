@@ -241,10 +241,11 @@ function About({ ...props }) {
           </motion.h2>
 
           <div className={styles.imageDiv}>
-          <Image src={textToDisplay[3]} sizes="100vh"
-        // Make the image display full width
+          <Image src={textToDisplay[3]} sizes="100vw"
         style={{
-          height: '100%',
+          width: '100%',
+          height: 'auto',
+          objectFit: 'contain'
         }} />
         </div>
 

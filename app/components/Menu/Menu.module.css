@@ -1,0 +1,30 @@
+.footerLinks{
+    background-color: var(--background-color);
+    display: flex;
+    padding: 6rem 6rem 6rem 6rem;
+    gap: 8rem;
+    border-radius: 5rem 0 0 5rem;
+}
+
+.footerLinks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style-type: none;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 2.4rem */
+letter-spacing: -0.0352rem;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: rgba(84, 42, 0, 0.50);
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 2.4rem */
+letter-spacing: -0.0352rem;
+}

@@ -18,6 +18,15 @@ function Ini() {
     visible: { opacity: 1, y: 0 }, // Fade in and move up smoothly
   };
 
+  const handleClick = () => {
+    if (active === "L") {
+      setActive("A");
+    } else {
+      setActive("L");
+    }
+  
+  }
+
 
   return (
     <>
@@ -119,7 +128,7 @@ function Ini() {
             className={`${active === "L" ? styles.activeLeft : ""} ${
               styles.leftOverlay
             }`}
-          >
+          ><div className={styles.dragIcon} onClick={handleClick}></div>
             {active === "L" ? (
               <motion.h2
                 variants={fadeIn}
@@ -152,14 +161,14 @@ function Ini() {
           className={`${active === "A"? styles.active : ""} ${
             styles.rightContainer
           }`}
-          onClick={() => setActive("A")}
+          onClick={handleClick}
         >
           <Image src={austin} alt="austin" />
           <div
             className={`${active === "A"? styles.activeRight : ""} ${
               styles.rightOverlay
             }`}
-          >
+          ><div className={styles.dragIcon} onClick={handleClick}></div>
             {active === "A"? (
               <motion.h2
                 variants={fadeIn}
