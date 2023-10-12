@@ -39,7 +39,7 @@ function Ini() {
           }`}
           onClick={() => setActive("L")}
         >
-          <Image src={leh} alt="leh" quality={100} />
+          <Image src={leh} alt="leh" quality={100} style={{borderRadius: '5rem'}}/>
           <div
             className={`${active === "L" ? styles.activeLeft : ""} ${
               styles.leftOverlay
@@ -78,7 +78,7 @@ function Ini() {
           }`}
           onClick={() => setActive("A")}
         >
-          <Image src={austin} alt="austin" />
+          <Image src={austin} quality={100} alt="austin" style={{borderRadius: '5rem'}}/>
           <div
             className={`${active === "A" ? styles.activeRight : ""} ${
               styles.rightOverlay
