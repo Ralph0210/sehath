@@ -48,7 +48,7 @@ const Page = () => {
                 quality={100}
                 src={leh}
                 sizes="100vh"
-                style={{ width: "100%", height: "auto", objectFit: "contain" }}
+                // style={{ width: "100%", height: "auto", objectFit: "contain" }}
               />
             </motion.div>
           ) : (
@@ -62,7 +62,7 @@ const Page = () => {
                 quality={100}
                 src={austin}
                 sizes="100vh"
-                style={{ width: "100%", height: "auto", objectFit: "contain" }}
+                // style={{ width: "100%", height: "auto", objectFit: "contain" }}
               />
             </motion.div>
           )}
@@ -122,7 +122,7 @@ const Page = () => {
               <h2>Ladakh Unveiled: Our Himalayan Healthcare Initiative</h2>
               <p style={{paddingBottom: "5rem"}}>
 
-                Welcome to Sehath Ladakh Initiative, where we are committed to
+                Welcome to Sehath's Ladakh Initiative, where we are committed to
                 making a meaningful impact on the health and well-being of the
                 Ladakh region. Our focus is on oral health, vision care, and
                 women's health. Explore how we are bringing awareness and
@@ -156,7 +156,7 @@ const Page = () => {
             <div className={styles.text}>
               <h2>Our Austin Initiative</h2>
               <p style={{paddingBottom: "5rem"}}>
-              Welcome to Sehath @UT's Austin Initiatives, where we are dedicated to fostering positive change and well-being within our local community. Our mission centers around building a healthier, more connected Austin through various initiatives. Discover how we're creating awareness and making a difference right here in our vibrant city.
+              Welcome to Sehath's Austin Initiatives, where we are dedicated to fostering positive change and well-being within our local community. Our mission centers around building a healthier, more connected Austin through various initiatives. Discover how we're creating awareness and making a difference right here in our vibrant city.
               </p>
               <h2>Current Initiatives</h2>
               <p>
@@ -177,7 +177,7 @@ const Page = () => {
                 borderRadius: "5rem",
               }}
             />
-            <p className={styles.scenicText}></p>
+            <p className={styles.scenicText}>Blanton Art Museum on the University of Texas campus in Austin, Texas.</p>
           </div>
         </div>}
        

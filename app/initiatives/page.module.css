@@ -10,6 +10,9 @@
 
 .iniImage{
   border-radius: 5rem;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .iniTitle{
@@ -33,7 +36,7 @@
   flex-direction: column;
   position: absolute;
   bottom: 0;
-  width: 30%;
+  width: 45%;
 }
 
 .bottomPart {
@@ -207,4 +210,186 @@ font-size: 2.4rem;
   padding: 0.8rem 0;
   font-size: 2.4rem;
   border-radius: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    width: fit-content;
+  }
+
+  .iniTitle{
+    font-size: 6.4rem;
+  }
+
+  .aboutButton{
+    font-size: 1.6rem;
+    }
+    
+    .aboutButton li{
+    padding: 0.5rem 2rem;
+    }
+
+    .leftSquare {
+
+      height: 5rem;
+
+      border-radius: 0 2rem 0 2rem;
+
+    }
+
+    .cornerImage{
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .text h2{
+      font-size: 2.4rem;
+    }
+    
+    .text p{
+      font-size: 1.6rem;
+    }
+
+    .rightContainer p{
+      font-size: 1.6rem;
+    }
+    
+    .leftContainer2 h2{
+      font-size: 2.4rem;
+    }
+    
+    .text2 h3{
+      font-size: 2rem;
+    }
+    
+    .text3{
+      font-size: 1.6rem;
+    }
+    
+    .text2 p{
+      font-size: 1.6rem;
+    }
+
+    .joinUs span:nth-child(1) {
+    font-size: 2rem;
+    }
+    
+    .joinUs span:nth-child(2) {
+      font-size: 2rem;
+    }
+
+    .aboutButton{
+      gap: 2rem;
+      margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .joinUs span:nth-child(1) {
+    font-size: 1.6rem;
+    }
+    
+    .joinUs span:nth-child(2) {
+      font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+  .iniImageTitleContainer{
+    position: relative;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .iniImage{
+    border-radius:0 0 0 5rem;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .iniTitle{
+    font-size: 4.8rem;
+  }
+
+  .aboutButton{
+    font-size: 1.2rem;
+    }
+    
+    .aboutButton li{
+    padding: 0.4rem 0.8rem;
+    }
+
+    .leftSquare {
+
+      height: 5rem;
+
+      border-radius: 0 2rem 0 2rem;
+
+    }
+
+    .cornerImage{
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .text h2{
+      font-size: 2rem;
+    }
+    
+    .text p{
+      font-size: 1.6rem;
+    }
+
+    .rightContainer p{
+      font-size: 1.6rem;
+    }
+    
+    .leftContainer2 h2{
+      font-size: 2rem;
+    }
+    
+    .text2 h3{
+      font-size: 1.8rem;
+    }
+    
+    .text3{
+      font-size: 1.6rem;
+    }
+    
+    .text2 p{
+      font-size: 1.6rem;
+    }
+
+    .joinUs span:nth-child(1) {
+    font-size: 1.6rem;
+    }
+    
+    .joinUs span:nth-child(2) {
+      font-size: 1.6rem;
+    }
+
+    .aboutButton{
+      gap: 1rem;
+      margin-left: 5%;
+    }
+
+    .meetCrewContainer{
+      display: flex;
+      margin: 4rem 7%;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .text2{
+      flex-direction: column;
+    }
+
+    .text3{
+      width: 80%;
+    }
 }
