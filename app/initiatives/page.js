@@ -231,13 +231,14 @@ const Page = () => {
               </p>
 
               <div className={styles.joinUs} style={{ cursor: "pointer" }}>
-                  <motion.span
+                  <motion.a
+                  href="/#donation"
                     whileTap={{ scale: 0.8 }}
                     whileHover={{ scale: 1.1 }}
                     onClick={() => scrollToElement("donation")}
                   >
                     Join Us
-                  </motion.span>
+                  </motion.a>
                   <span>or follow us on <a target="-blank" style={{color:"#542A00"}} href="https://www.instagram.com/utsehath/">instagram</a></span>
                 </div>
             </div>
@@ -271,13 +272,14 @@ const Page = () => {
               </p>
 
               <div className={styles.joinUs} style={{ cursor: "pointer" }}>
-                  <motion.span
+                  <motion.a
+                  href="/#donation"
                     whileTap={{ scale: 0.8 }}
                     whileHover={{ scale: 1.1 }}
                     onClick={() => scrollToElement("donation")}
                   >
-                    Join Us
-                  </motion.span>
+                   Join Us
+                  </motion.a>
                   <span>or follow us on <a target="-blank" style={{color:"#542A00"}} href="https://www.instagram.com/utsehath/">instagram</a></span>
                 </div>
             </div>

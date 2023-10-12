@@ -195,7 +195,9 @@ letter-spacing: -0.0528rem;
   gap: 3rem;
 }
 
-.joinUs span:nth-child(1) {
+.joinUs a{
+  color: var(--text-color);
+  text-decoration: none;
   display: flex;
   background-color: var(--selected-color);
   padding: 0 3rem;
@@ -203,13 +205,19 @@ letter-spacing: -0.0528rem;
   justify-content: center;
   align-items: center;
 font-size: 2.4rem;
+width: max-content;
 }
 
-.joinUs span:nth-child(2) {
+.joinUs span{
   color: var(--text-color);
   padding: 0.8rem 0;
   font-size: 2.4rem;
   border-radius: 2rem;
+}
+
+.joinUs span > a{
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 @media (max-width: 1000px) {
@@ -270,11 +278,11 @@ font-size: 2.4rem;
       font-size: 1.6rem;
     }
 
-    .joinUs span:nth-child(1) {
+    .joinUs a{
     font-size: 2rem;
     }
     
-    .joinUs span:nth-child(2) {
+    .joinUs span{
       font-size: 2rem;
     }
 
@@ -286,11 +294,11 @@ font-size: 2.4rem;
 }
 
 @media (max-width: 768px) {
-  .joinUs span:nth-child(1) {
+  .joinUs a{
     font-size: 1.6rem;
     }
     
-    .joinUs span:nth-child(2) {
+    .joinUs span{
       font-size: 1.6rem;
     }
 
@@ -365,11 +373,11 @@ font-size: 2.4rem;
       font-size: 1.6rem;
     }
 
-    .joinUs span:nth-child(1) {
+    .joinUs a {
     font-size: 1.6rem;
     }
     
-    .joinUs span:nth-child(2) {
+    .joinUs span{
       font-size: 1.6rem;
     }
 
