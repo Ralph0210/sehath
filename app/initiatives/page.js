@@ -45,7 +45,7 @@ const Page = () => {
               exit={{ opacity: 0, x: 20 }}
             >
               <Image
-              unoptimized={true}
+              // unoptimized={true}
                 className={styles.iniImage}
                 quality={100}
                 src={leh}
@@ -61,7 +61,7 @@ const Page = () => {
               exit={{ opacity: 0, x: 20 }}
             >
               <Image
-              unoptimized={true}
+              // unoptimized={true}
                 className={styles.iniImage}
                 quality={100}
                 src={austin}

@@ -30,7 +30,7 @@ export default function Hero({...props}) {
         <div className={styles.heroImageContainer}>
         <Image
         quality={100}
-        unoptimized={true}
+        // unoptimized={true}
           src={hero}
           className={styles.heroImage}
           sizes="100vh"
@@ -61,7 +61,7 @@ export default function Hero({...props}) {
               alt="corner image"
               priority
             />
-            <div className={styles.rightSquare}><p>We are a student-led organization dedicated to improve global healthcare.</p></div>
+            <div className={styles.rightSquare}><p>UT Sehath is a student-led organization dedicated to improve global healthcare.</p></div>
           </div>
         </motion.div>
 
@@ -97,7 +97,7 @@ export default function Hero({...props}) {
           </div>
         </motion.div>
         </div>
-        <p className={styles.mobileText}>We are a student-led organization dedicated to improve global healthcare.</p>
+        <p className={styles.mobileText}>UT Sehath is a student-led organization dedicated to improve global healthcare.</p>
         <div className={styles.mobileTextDivider}></div>
       </div>
     </>

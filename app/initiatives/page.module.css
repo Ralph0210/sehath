@@ -28,7 +28,7 @@
   font-weight: 700;
   line-height: 150%; /* 19.2rem */
   letter-spacing: -0.2816rem;
-  z-index: 100;
+  z-index: 3;
 }
 
 .leftShape{
