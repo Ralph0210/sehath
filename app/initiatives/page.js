@@ -45,10 +45,12 @@ const Page = () => {
               exit={{ opacity: 0, x: 20 }}
             >
               <Image
+              unoptimized={true}
                 className={styles.iniImage}
                 quality={100}
                 src={leh}
                 sizes="100vh"
+                priority
                 // style={{ width: "100%", height: "auto", objectFit: "contain" }}
               />
             </motion.div>
@@ -59,10 +61,12 @@ const Page = () => {
               exit={{ opacity: 0, x: 20 }}
             >
               <Image
+              unoptimized={true}
                 className={styles.iniImage}
                 quality={100}
                 src={austin}
                 sizes="100vh"
+                priority
                 // style={{ width: "100%", height: "auto", objectFit: "contain" }}
               />
             </motion.div>

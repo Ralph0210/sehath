@@ -29,6 +29,8 @@ export default function Hero({...props}) {
       <div className={styles.heroContainer}>
         <div className={styles.heroImageContainer}>
         <Image
+        quality={100}
+        unoptimized={true}
           src={hero}
           className={styles.heroImage}
           sizes="100vh"
