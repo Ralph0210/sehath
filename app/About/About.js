@@ -2,10 +2,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
-import study from "../../public/study.png";
+import study from "../../public/study.jpg";
 import corner from "../../public/corner.png";
 import sideMission from "../../public/missionSide.png";
+import dental from '../../public/dental.jpg'
+import kid from '../../public/kid.jpg'
 import arrow from "../../public/arrow.svg";
+import surgery from '../../public/surgery.jpg'
+import awareness from '../../public/awareness.jpg'
 import { motion, useAnimation, useInView, AnimatePresence } from "framer-motion";
 import { scrollToElement } from "../utils/scroll";
 
@@ -33,6 +37,8 @@ function About({ ...props }) {
             "Global Medical Empowerment",
             "Empower UT students to bridge education-action gap through global medical care for underserved communities.",
             "'Global Medical Empowerment' encapsulates our commitment to fostering a transformative experience for UT students. It's about empowering you to bridge the education-action gap in global healthcare.",
+            study,
+            dental
           ]);
           break;
         case "approach":
@@ -40,6 +46,8 @@ function About({ ...props }) {
             "Awareness & Education",
             "Raise awareness, educate locally and globally, and make meaningful impacts in healthcare.",
             "Becoming a part of our community, you'll have the chance to amplify crucial healthcare issues, ignite change, and create a brighter, healthier future for underserved communities worldwide.",
+            awareness,
+            sideMission
           ]);
           break;
         case "vision":
@@ -47,6 +55,8 @@ function About({ ...props }) {
             "Healthcare Equity",
             "Create a world where healthcare reaches everyone, regardless of their circumstances.",
             "Becoming a part of our community, you'll have the chance to amplify crucial healthcare issues, ignite change, and create a brighter, healthier future for underserved communities worldwide.",
+            kid,
+            surgery
           ]);
           break;
         default:
@@ -145,9 +155,10 @@ function About({ ...props }) {
               Vision
             </motion.li>
           </ul>)}</AnimatePresence>
-          <Image src={study} sizes="100vw"
+          <Image src={textToDisplay[3]} sizes="100vw"
         // Make the image display full width
         style={{
+          borderRadius: '5rem',
           width: '90%',
           height: 'auto',
         }} />
@@ -184,7 +195,7 @@ function About({ ...props }) {
                   >
                     Join Us
                   </motion.span>
-                  <span>or follow us on instagram</span>
+                  <span>or follow us on <a target="-blank" style={{color:"#542A00"}} href="https://www.instagram.com/utsehath/">instagram</a></span>
                 </div>
               </div>
             </div>
@@ -192,7 +203,7 @@ function About({ ...props }) {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <Image src={sideMission} width={600} style={{ objectFit: "contain" }} />
+        <Image src={textToDisplay[4]} width={600} style={{ objectFit: "contain", borderRadius:"5rem" }} />
       </div>
     </div>
     <div className={styles.mobileAboutContainer}>
@@ -230,7 +241,7 @@ function About({ ...props }) {
           </motion.h2>
 
           <div className={styles.imageDiv}>
-          <Image src={study} sizes="100vh"
+          <Image src={textToDisplay[3]} sizes="100vh"
         // Make the image display full width
         style={{
           height: '100%',

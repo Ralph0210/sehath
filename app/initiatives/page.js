@@ -12,6 +12,7 @@ import lehScenic from "../../public/leh_mountain.png";
 import flags from "../../public/flags.png";
 import austin1 from '../../public/austin1.jpg'
 import austin2 from '../../public/austin2.jpg'
+import { scrollToElement } from "../utils/scroll";
 
 
 
@@ -233,7 +234,7 @@ const Page = () => {
                   >
                     Join Us
                   </motion.span>
-                  <span>or follow us on instagram</span>
+                  <span>or follow us on <a target="-blank" style={{color:"#542A00"}} href="https://www.instagram.com/utsehath/">instagram</a></span>
                 </div>
             </div>
           </div>
@@ -273,7 +274,7 @@ const Page = () => {
                   >
                     Join Us
                   </motion.span>
-                  <span>or follow us on instagram</span>
+                  <span>or follow us on <a target="-blank" style={{color:"#542A00"}} href="https://www.instagram.com/utsehath/">instagram</a></span>
                 </div>
             </div>
           </div>

@@ -60,7 +60,7 @@ function Ini() {
               >
                 In partnership with the Himalayan Health Project, we aim to
                 address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women's health.
+                with a focus on oral hygiene, vision care, and women's health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
               </motion.p>
             )}
           </div>
@@ -99,7 +99,7 @@ function Ini() {
               >
                 In partnership with the Himalayan Health Project, we aim to
                 address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women's health.
+                with a focus on oral hygiene, vision care, and women's health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
               </motion.p>
             )}
           </div>
