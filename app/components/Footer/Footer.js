@@ -40,14 +40,14 @@ function Footer() {
           <li>
             <Link href="/initiatives">Initiatives</Link>
           </li>
-          <li>
+          <li >
             <Link href="/events">Events</Link>
           </li>
-          <li>
-            <Link href="/donation">Donation</Link>
+          <li onClick={() => scrollToElement("donation")} style={{ cursor: "pointer" }}>
+            <Link href="/#donation">Donation</Link>
           </li>
-          <li>
-            <Link href="/contact_us">Contact Us</Link>
+          <li  onClick={() => scrollToElement("footer")} style={{ cursor: "pointer" }}>
+            Contact Us
           </li>
         </ul>
         <ul>
