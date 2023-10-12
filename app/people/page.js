@@ -29,7 +29,7 @@ const page = () => {
         <div className={styles.leftContainer}>
           <div className={styles.text}>
             <h2>Meet Our Dedicated Crew</h2>
-            <p>Meet the driving force behind Sehath's mission to bridge the global healthcare education-action gap and discover their unwavering commitment to serving underserved communities worldwide.</p>
+            <p>Meet the driving force behind Sehath&#39;s mission to bridge the global healthcare education-action gap and discover their unwavering commitment to serving underserved communities worldwide.</p>
           </div>
         </div>
         <div className={styles.rightContainer}>

@@ -5,22 +5,19 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import leh from "../../public/leh.png";
 import austin from "../../public/austin.png";
-import { motion, useScroll, useMotionValueEvent, useInView } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 function Ini() {
   const [active, setActive] = useState("L");
 
   const refLeh = useRef(null)
-  const lehIsInView = useInView(refLeh)
   const refAustin = useRef(null)
-  const austinIsInView = useInView(refAustin)
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 }, // Start with opacity 0 and slight Y translation
     visible: { opacity: 1, y: 0 }, // Fade in and move up smoothly
   };
 
-  const { scrollYProgress } = useScroll();
 
   return (
     <>
@@ -60,7 +57,7 @@ function Ini() {
               >
                 In partnership with the Himalayan Health Project, we aim to
                 address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women's health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
+                with a focus on oral hygiene, vision care, and women&#39;s health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
               </motion.p>
             )}
           </div>
@@ -99,7 +96,7 @@ function Ini() {
               >
                 In partnership with the Himalayan Health Project, we aim to
                 address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women's health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
+                with a focus on oral hygiene, vision care, and women&#39;s health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
               </motion.p>
             )}
           </div>
@@ -144,7 +141,7 @@ function Ini() {
               >
                 In partnership with the Himalayan Health Project, we aim to
                 address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women's health.
+                with a focus on oral hygiene, vision care, and women&#39;s health.
               </motion.p>
             )}
           </div>
@@ -184,7 +181,7 @@ function Ini() {
               >
                 In partnership with the Himalayan Health Project, we aim to
                 address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women's health.
+                with a focus on oral hygiene, vision care, and women&#39;s health.
               </motion.p>
             )}
           </div>
