@@ -65,7 +65,7 @@ letter-spacing: -0.0528rem;
     display: flex;
     gap: 3rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .officerCard h3{
@@ -105,4 +105,73 @@ width: fit-content;
   .title {
     width: fit-content;
   }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 4.8rem;
+      }
+
+      .text h2{
+        color: var(--text-color);
+        font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 5.4rem */
+    letter-spacing: -0.0792rem;
+    }
+    
+    .text p{
+        width: 85%;
+        color: rgba(84, 42, 0, 0.50);;
+        font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3.6rem */
+    letter-spacing: -0.0528rem;
+    }
+
+    .officerCard h3{
+        color: var(--text-color);
+        font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 4.8rem */
+    letter-spacing: -0.0704rem;
+    }
+    
+    .officerCard p{
+        max-width: 30rem;
+        color: rgba(84, 42, 0, 0.50);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3rem */
+    letter-spacing: -0.044rem;
+    width: fit-content;
+    }
+
+    .meetCrewContainer{
+        flex-direction: column;
+        margin: 2rem 7%;
+    }
+
+    .rightContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crewContainer > div{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .crewContainer{
+        display: flex;
+        gap: 3rem;
+        margin: 2rem 7%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
