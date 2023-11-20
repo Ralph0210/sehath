@@ -103,9 +103,8 @@ function Ini() {
                 whileInView="visible"
                 transition={{ duration: 0.3, delay: 0.8}}
               >
-                In partnership with the Himalayan Health Project, we aim to
-                address critical healthcare needs in the region of Leh, Ladakh,
-                with a focus on oral hygiene, vision care, and women&#39;s health. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
+                
+The Austin Project at UT bridges the education-action gap in healthcare. Students provide global medical care to underserved communities, fostering responsibility and creating future healthcare leaders with a global impact. <a href="/initiatives" style={{color:"white", textDecoration:"underline"}}>Read More</a>
               </motion.p>
             )}
           </div>
